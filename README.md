@@ -36,7 +36,8 @@ end
 
 ### Objective-C tracking
 ```objective-c
-    @import NextUser;
+    @import NextUser; // this goes into the header!
+    // ------- 
 
     NUTracker *tracker = [NUTracker sharedTracker];
     tracker.logLevel = NULogLevelVerbose;
