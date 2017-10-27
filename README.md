@@ -10,7 +10,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
 
 target 'MyApp' do
-    pod "NextUser", '~> 1.0.0'
+    pod "NextUser", '~> 1.0.2'
 end
 ```
 
@@ -30,7 +30,7 @@ pod update NextUser
 ### Pod file section
 ```
 target 'BeaconsDemo' do
-    pod "NextUser", '~> 1.0.0'
+    pod "NextUser", '~> 1.0.2'
 end
 ```
 
