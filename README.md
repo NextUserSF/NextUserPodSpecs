@@ -10,7 +10,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
 
 target 'MyApp' do
-    pod "NextUser", '~> 0.0.5'
+    pod "NextUser", '~> 1.0.0'
 end
 ```
 
@@ -30,7 +30,7 @@ pod update NextUser
 ### Pod file section
 ```
 target 'BeaconsDemo' do
-    pod "NextUser", '~> 0.0.5'
+    pod "NextUser", '~> 1.0.0'
 end
 ```
 
@@ -39,11 +39,5 @@ end
     @import NextUser; // this goes into the header!
     // ------- 
 
-    NUTracker *tracker = [NUTracker sharedTracker];
-    tracker.logLevel = NULogLevelVerbose;
-    [tracker startSessionWithTrackIdentifier:@"my_wid"];
-    [tracker identifyUserWithIdentifier:@"marin+ios2@test.com"];
-    
-    NUAction *action = [NUAction actionWithName:@"test_action"];
-    [tracker trackAction:action];
+    NUTracker *tracker = [Nextuser tracker];
  ```
