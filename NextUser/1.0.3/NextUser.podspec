@@ -22,11 +22,7 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack'
   s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'PubNub', '~> 4'
-  s.dependency 'Firebase/Core'
-  s.dependency 'Firebase/Messaging'
   s.dependency 'Firebase'
-  s.dependency 'Firebase/Core'
-  s.dependency 'Firebase/RemoteConfig'
 
   s.pod_target_xcconfig = {
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase $(PODS_ROOT)/FirebaseCore/Frameworks $(PODS_ROOT)/FirebaseRemoteConfig/Frameworks $(PODS_ROOT)/FirebaseInstanceID/Frameworks $(PODS_ROOT)/FirebaseAnalytics/Frameworks $(PODS_ROOT)/FirebaseABTesting/Frameworks'
