@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
     s.dependency 'Firebase/Core'
     s.dependency 'Firebase/Messaging'
     s.frameworks = 'SystemConfiguration'
+    s.vendored_frameworks = 'FirebaseAnalytics.framework', 'FirebaseCore.framework’, 'FirebaseCoreDiagnostics.framework', 'FirebaseNanoPB.framework’, 'FirebaseInstanceID.framework', 'FirebaseMessaging.framework’
 end
