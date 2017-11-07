@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
     s.dependency 'Firebase/Messaging'
     s.frameworks = 'SystemConfiguration', 'FirebaseAnalytics', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB', 'FirebaseInstanceID', 'FirebaseMessaging'
     s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode.app/Contents/Developer/Library/Frameworks' }
-    s.vendored_frameworks = 'FirebaseAnalytics.framework’, 'FirebaseCore.framework', 'FirebaseCoreDiagnostics.framework', 'FirebaseNanoPB.framework', 'FirebaseInstanceID.framework', 'FirebaseMessaging.framework'
+    s.vendored_frameworks = 'FirebaseAnalytics.framework', 'FirebaseCore.framework', 'FirebaseCoreDiagnostics.framework', 'FirebaseNanoPB.framework', 'FirebaseInstanceID.framework', 'FirebaseMessaging.framework'
 
 end
