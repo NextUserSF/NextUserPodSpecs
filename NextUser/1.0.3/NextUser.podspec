@@ -16,14 +16,24 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'NextUser' => ['NextUser/Assets/*.png']
   }
+    
+  s.frameworks = 'MapKit', 'Foundation', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony', 'FirebaseCore', 'FirebaseRemoteConfig', 'FirebaseInstanceID', 'FirebaseAnalytics', 'FirebaseABTesting', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB'
+    
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'PubNub', '~> 4'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/RemoteConfig'
 
-    s.dependency 'CocoaLumberjack'
-    s.dependency 'AFNetworking', '~> 3.0'
-    s.dependency 'PubNub', '~> 4'
-    s.dependency 'Firebase/Core'
-    s.dependency 'Firebase/Messaging'
-    s.frameworks = 'SystemConfiguration', 'FirebaseAnalytics', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB', 'FirebaseInstanceID', 'FirebaseMessaging'
-    s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '/Applications/Xcode.app/Contents/Developer/Library/Frameworks' }
-    s.vendored_frameworks = 'FirebaseAnalytics.framework', 'FirebaseCore.framework', 'FirebaseCoreDiagnostics.framework', 'FirebaseNanoPB.framework', 'FirebaseInstanceID.framework', 'FirebaseMessaging.framework'
+  s.pod_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase $(PODS_ROOT)/FirebaseCore/Frameworks $(PODS_ROOT)/FirebaseRemoteConfig/Frameworks $(PODS_ROOT)/FirebaseInstanceID/Frameworks $(PODS_ROOT)/FirebaseAnalytics/Frameworks $(PODS_ROOT)/FirebaseABTesting/Frameworks'
+  }
+
+    s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+  }
 
 end
