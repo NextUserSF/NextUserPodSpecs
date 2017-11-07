@@ -22,5 +22,6 @@ Pod::Spec.new do |s|
     s.dependency 'PubNub', '~> 4'
     s.dependency 'Firebase/Core'
     s.dependency 'Firebase/Messaging'
-    s.frameworks 'SystemConfiguration’, 'FirebaseAnalytics','FirebaseCore','FirebaseCoreDiagnostics','FirebaseNanoPB','FirebaseInstanceID','FirebaseMessaging'
+    s.frameworks = ‘SystemConfiguration’, 'FirebaseAnalytics', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB', 'FirebaseInstanceID', 'FirebaseMessaging'
+
 end
