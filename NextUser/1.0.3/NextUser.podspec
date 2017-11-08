@@ -17,12 +17,15 @@ Pod::Spec.new do |s|
     'NextUser' => ['NextUser/Assets/*.png']
   }
     
-  s.frameworks = 'MapKit', 'Foundation', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony', 'FirebaseCore', 'FirebaseRemoteConfig', 'FirebaseInstanceID', 'FirebaseAnalytics', 'FirebaseABTesting', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB'
+  s.frameworks = 'SystemConfiguration', 'FirebaseCore', 'FirebaseRemoteConfig', 'FirebaseInstanceID', 'FirebaseAnalytics', 'FirebaseABTesting', 'FirebaseCoreDiagnostics', 'FirebaseNanoPB'
     
   s.dependency 'CocoaLumberjack'
   s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'PubNub', '~> 4'
-  s.dependency 'Firebase'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase/Analytics'
+
 
   s.pod_target_xcconfig = {
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase $(PODS_ROOT)/FirebaseCore/Frameworks $(PODS_ROOT)/FirebaseRemoteConfig/Frameworks $(PODS_ROOT)/FirebaseInstanceID/Frameworks $(PODS_ROOT)/FirebaseAnalytics/Frameworks $(PODS_ROOT)/FirebaseABTesting/Frameworks'
