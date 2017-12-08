@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/1542907/NextUser.framework.zip' }
 
   s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'ios/NextUser.framework'
+  s.ios.vendored_framework   = 'NextUser.framework'
 end
