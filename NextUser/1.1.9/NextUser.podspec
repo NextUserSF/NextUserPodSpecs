@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.xcconfig = {"FRAMEWORK_SEARCH_PATHS"=>"\"$(PODS_ROOT)/NextUser/**\"", "ENABLE_BITCODE"=>"YES"}
   s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/6131633/NextUser.framework.zip' }
   s.ios.deployment_target    = '10.0'
-  s.ios.vendored_framework   = 'NextUser.xcframework'
+  s.ios.vendored_framework   = 'NextUser.framework'
 end
