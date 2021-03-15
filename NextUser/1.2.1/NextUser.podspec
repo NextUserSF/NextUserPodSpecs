@@ -7,6 +7,9 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/NextUserSF/mobile-sdk-ios"
   s.description = "NextUser SDK for IOS platform"
   s.frameworks = "SystemConfiguration","UserNotifications"
+  s.dependency 'AFNetworking', '~> 4'
+  s.dependency 'CocoaLumberjack'
+  s.dependency 'Base64'
   s.requires_arc = true
   s.xcconfig = {"FRAMEWORK_SEARCH_PATHS"=>"\"$(PODS_ROOT)/NextUser/**\"", "ENABLE_BITCODE"=>"YES"}
   s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/6142934/NextUser.zip' }
