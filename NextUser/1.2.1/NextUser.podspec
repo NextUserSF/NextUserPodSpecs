@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'NextUserFramework'
+  s.name = 'NextUser'
   s.version = '1.2.1'
   s.summary = "NextUser analytics for IOS."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
