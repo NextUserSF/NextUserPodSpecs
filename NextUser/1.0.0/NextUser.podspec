@@ -1,24 +1,15 @@
 Pod::Spec.new do |s|
-  s.name             = 'NextUser'
-  s.version          = '1.0.0'
-  s.summary          = 'NextUser analytics for IOS.'
-  s.description      = 'NextUser SDK for IOS platform'
-
-  s.homepage         = 'https://github.com/NextUserSF/mobile-sdk-ios'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Next User' => 'marin@nextuser.com' }
-  s.source           = { :git => 'https://github.com/NextUserSF/mobile-sdk-ios.git', :tag => s.version.to_s }
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'NextUser/Classes/**/*.{h,m}'
-  s.public_header_files = 'NextUser/Classes/Public/**/*.h'
-  s.resource_bundles = {
-    'NextUser' => ['NextUser/Assets/*.png']
-  }
-
-    s.dependency 'CocoaLumberjack'
-    s.dependency 'AFNetworking', '~> 3.0'
-    s.dependency 'PubNub', '~> 4'
-    s.frameworks = 'SystemConfiguration'
+  s.name = 'NextUser'
+  s.version = '1.0.0'
+  s.summary = "NextUser analytics for IOS."
+  s.license = {"type"=>"MIT", "file"=>"LICENSE"}
+  s.authors = {"Next User"=>"a.lazea@gmail.com"}
+  s.homepage = "https://github.com/NextUserSF/mobile-sdk-ios"
+  s.description = "NextUser SDK for IOS platform"
+  s.frameworks = "SystemConfiguration","UserNotifications"
+  s.requires_arc = true
+  s.xcconfig = {"FRAMEWORK_SEARCH_PATHS"=>"\"$(PODS_ROOT)/NextUser/**\"", "ENABLE_BITCODE"=>"YES"}
+  s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/6850045/NextUser.zip' }
+  s.ios.deployment_target    = '10.0'
+  s.ios.vendored_framework   = 'NextUser.xcframework'
 end
