@@ -9,7 +9,7 @@
   s.frameworks = "SystemConfiguration","UserNotifications"
   s.requires_arc = true
   s.xcconfig = {"FRAMEWORK_SEARCH_PATHS"=>"\"$(PODS_ROOT)/NextUser/**\"", "ENABLE_BITCODE"=>"YES"}
-  s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/6881661/NextUser.zip' }
+  s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/6881760/NextUser.zip' }
   s.ios.deployment_target    = '10.0'
   s.ios.vendored_framework   = 'NextUser.xcframework'
 end
