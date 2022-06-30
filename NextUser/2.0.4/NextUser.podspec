@@ -7,6 +7,8 @@
   s.homepage = "https://github.com/NextUserSF/mobile-sdk-ios"
   s.description = "NextUser SDK for IOS platform"
   s.frameworks = "SystemConfiguration","UserNotifications"
+  s.dependency = 'CocoaLumberjack'
+  s.dependency = 'AFNetworking'
   s.requires_arc = true
   s.xcconfig = {"FRAMEWORK_SEARCH_PATHS"=>"\"$(PODS_ROOT)/NextUser/**\"", "ENABLE_BITCODE"=>"YES"}
   s.source = { :http => 'https://github.com/NextUserSF/mobile-sdk-ios/files/9019046/NextUser.zip' }
